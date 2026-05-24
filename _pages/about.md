@@ -1,56 +1,230 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Welcome to Zhiyuan Zhang's Personal Website"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+I am a third-year Ph.D. student in Computer Science at City University of Hong Kong, advised by [Jing Liao](https://www.cityu.edu.hk/stfprofile/jingliao.htm). My research focuses on controllable image and video generation, generative models, and 3D-guided content creation. During my Ph.D. studies, I have also been fortunate to receive valuable guidance and support from [Dongdong Chen](https://www.dongdongchen.bid/). Previously, I received my B.Sc. in Computer Science from CityU in 2023, where I conducted HCI research under the supervision of [Ray LC](https://www.scm.cityu.edu.hk/en/people/ray-lc).
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+This webpage is last updated on **2026/05/24.**
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+## Selected Research Papers (* denotes equal contribution)
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+### Computer Graphics / Vision
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+<div class="project-list">
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+  <div class="project">
+    <a class="project__thumb" href="https://bestzzhang.github.io/FlexTraj/">
+      <img src="{{ base_path }}/images/flextraj-teaser.png" alt="FlexTraj teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        FlexTraj: Image-to-Video Generation with Flexible Point Trajectory Control
+      </h3>
+      <p class="project__authors">
+        <strong><ins>Zhiyuan Zhang</ins></strong>,
+        Can Wang,
+        Dongdong Chen,
+        Jing Liao
+      </p>
+      <p class="project__venue">Computer Vision and Pattern Recognition (CVPR), 2026</p>
+      <p class="project__links">
+        <a class="pill" href="https://bestzzhang.github.io/FlexTraj/">Project Page</a>
+      </p>
+    </div>
+  </div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+  <div class="project">
+    <a class="project__thumb" href="https://github.com/Junrongh/ControlTile/tree/main">
+      <img src="{{ base_path }}/images/controltile-teaser.png" alt="ControlTile teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        Controllable Texture Tiling with Transformed RoPE-Enhanced Diffusion Models
+      </h3>
+      <p class="project__authors">
+        Junrong HUANG,
+        <strong><ins>Zhiyuan Zhang</ins></strong>,
+        Rui TANG,
+        Hongbo FU,
+        Jing Liao
+      </p>
+      <p class="project__venue">ACM SIGGRAPH, 2026</p>
+      <p class="project__links">
+        <a class="pill" href="https://github.com/Junrongh/ControlTile/tree/main/">Project Page</a>
+      </p>
+    </div>
+  </div>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+  <div class="project">
+    <a class="project__thumb" href="https://bestzzhang.github.io/I2V3D/">
+      <img src="{{ base_path }}/images/i2v3d-teaser.png" alt="I2V3D teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        I2V3D: Controllable Image-to-Video Generation with 3D Guidance
+      </h3>
+      <p class="project__authors">
+        <strong><ins>Zhiyuan Zhang</ins></strong>,
+        Dongdong Chen,
+        Jing Liao
+      </p>
+      <p class="project__venue">International Conference on Computer Vision (ICCV), 2025</p>
+      <p class="project__links">
+        <a class="pill" href="https://bestzzhang.github.io/I2V3D/">Project Page</a>
+      </p>
+    </div>
+  </div>
 
-**Markdown generator**
+  <div class="project">
+    <a class="project__thumb" href="https://bestzzhang.github.io/SGEdit/">
+      <img src="{{ base_path }}/images/sgedit-teaser.png" alt="SGEdit teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        SGEdit: Bridging LLM with Text2Image Generative Model for Scene Graph-based Image Editing
+      </h3>
+      <p class="project__authors">
+        <strong><ins>Zhiyuan Zhang</ins></strong>,
+        Dongdong Chen,
+        Jing Liao
+      </p>
+      <p class="project__venue">ACM Transactions on Graphics (TOG), 2024</p>
+      <p class="project__links">
+        <a class="pill" href="https://bestzzhang.github.io/SGEdit/">Project Page</a>
+      </p>
+    </div>
+  </div>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+  <div class="project">
+    <a class="project__thumb" href="https://bestzzhang.github.io/continuous-layout-editing/">
+      <img src="{{ base_path }}/images/continuous-layout-teaser.png" alt="Continuous Layout Editing teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        Continuous Layout Editing of Single Images with Diffusion Models
+      </h3>
+      <p class="project__authors">
+        <strong><ins>Zhiyuan Zhang*</ins></strong>,
+        Huang Zhitong*,
+        Jing Liao
+      </p>
+      <p class="project__venue">Computer Graphics Forum, 2023</p>
+      <p class="project__links">
+        <a class="pill" href="https://bestzzhang.github.io/continuous-layout-editing/">Project Page</a>
+      </p>
+    </div>
+  </div>
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+</div>
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+### Human-Computer Interaction
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<div class="project-list">
+
+  <div class="project">
+    <a class="project__thumb" href="https://dl.acm.org/doi/10.1145/3613904.3642345">
+      <img src="{{ base_path }}/images/dances-with-drones-teaser.png" alt="Dances with Drones teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        Dances with Drones: Spatial Matching and Perceived Agency in Improvised Movements with Drone and Human Partners
+      </h3>
+      <p class="project__authors">
+        Kaixu Dong*,
+        <strong><ins>Zhiyuan Zhang</ins></strong>*,
+        Xiaoyu Chang,
+        Pakpong Chirarattananon,
+        Ray LC
+      </p>
+      <p class="project__venue">ACM Conference on Human Factors in Computing Systems (CHI), 2024</p>
+      <p class="project__links">
+        <a class="pill" href="https://www.youtube.com/watch?v=LQqgiHM4MoA">Video</a>
+      </p>
+    </div>
+  </div>
+
+  
+
+  <div class="project">
+    <a class="project__thumb" href="https://dl.acm.org/doi/10.1145/3715336.3735682">
+      <img src="{{ base_path }}/images/eliciting.png" alt="ELICITING (IMMERSIVE) INTANGIBLES teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        ELICITING (IMMERSIVE) INTANGIBLES: GENAI-SUPPORTED COLLABORATIVE VISUAL NARRATION IN A PHYSICALLY IMMERSIVE SPACE
+      </h3>
+      <p class="project__authors">
+        Marty Miller,
+        <strong><ins>Zhiyuan Zhang</ins></strong>,
+        Jing Liao,
+        Ray LC
+      </p>
+      <p class="project__venue">Proceedings of the ACM Designing Interactive Systems Conference (DIS), 2025</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <a class="project__thumb" href="https://hai-gen.github.io/2022/papers/paper-HAIGEN-YangDaijin.pdf">
+      <img src="{{ base_path }}/images/ai-as-writer.png" alt="ELICITING (IMMERSIVE) INTANGIBLES teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        AI as an Active Writer: Interaction strategies with generated text in human-AI collaborative fiction writing
+      </h3>
+      <p class="project__authors">
+      Daijin Yang,
+      Yanpeng Zhou,
+      <strong><ins>Zhiyuan Zhang</ins></strong>,
+      Toby Jia-Jun,
+      Ray LC
+      </p>
+      <p class="project__venue">HAI-GEN Workshop at IUI 2022</p>
+    </div>
+  </div>
+  
+</div>
+
+## Internship
+
+<div>
+  <strong>Tencent, RoboticsX Team</strong>
+  <span style="float: right;">Nov 2025 – Present</span>
+  <br>
+  Research Intern <span style="float: right;">Shenzhen</span>
+</div>
+
+<div style="margin-top: 1em;">
+  <strong>Meituan, Drone Team</strong>
+  <span style="float: right;">Jun 2022 – Aug 2022</span>
+  <br>
+  Engineer Intern <span style="float: right;">Shenzhen</span>
+</div>
+
+## Education
+
+<div>
+  <strong>City University of Hong Kong</strong>
+  <span style="float: right;">2023–2027</span>
+  <br>
+  PhD in Computer Science
+</div>
+
+<div style="margin-top: 1em;">
+  <strong>City University of Hong Kong</strong>
+  <span style="float: right;">2019–2023</span>
+  <br>
+  Bachelor of Science in Computer Science
+</div>
+
+<div style="margin-top: 1em;">
+  <strong>University of Illinois Urbana-Champaign</strong>
+  <span style="float: right;">2023</span>
+  <br>
+  Exchange Program in Computer Science
+</div>
+

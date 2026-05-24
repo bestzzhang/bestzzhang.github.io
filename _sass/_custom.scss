@@ -1,0 +1,255 @@
+/* ============================================================
+ * _custom.scss — single-page personal site overrides
+ *
+ * Loaded last from assets/css/main.scss so these rules win
+ * without touching the upstream AcademicPages SCSS files.
+ *
+ * Sections:
+ *   1. Typography & spacing rhythm
+ *   2. Sidebar / avatar proportions
+ *   3. Section heading style (===== underline look)
+ *   4. Project card grid (image + side description)
+ *   5. Pill links (Arxiv / Project Page / Code …)
+ *   6. Hide elements we don't want in single-page mode
+ * ============================================================ */
+
+/* 1. Typography & spacing -------------------------------- */
+
+.page__content {
+  p,
+  li {
+    font-size: 0.95em;
+    line-height: 1.65;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+    font-weight: 700;
+  }
+
+  h1.page__title {
+    font-size: 1.7em;
+    margin-bottom: 0.4em;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* 2. Sidebar / avatar proportions ------------------------ */
+
+.sidebar {
+  .author__avatar img {
+    max-width: 180px;
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .author__name {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin-top: 0.6em;
+  }
+
+  .author__bio {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .author__urls li {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+}
+
+/* 3. Section heading underline (matches "Setext" style) -- */
+
+.page__content {
+  h1,
+  h2 {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.3em;
+  }
+}
+
+/* 4. Project card grid ---------------------------------- */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85em;
+  margin: 0.5em 0 1.25em;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0.75em;
+  align-items: center;
+
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.project__thumb {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f6f6f8;
+  height: 112px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.project__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+
+  p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.15;
+  }
+}
+
+.project__title {
+  font-size: 0.92em;
+  font-weight: 700;
+  margin: 0 0 0.1em 0;
+  line-height: 1.15;
+}
+
+.project__authors {
+  font-size: 0.82em;
+  margin: 0;
+  line-height: 1.15;
+  color: #333;
+}
+
+.project__venue {
+  font-size: 0.8em;
+  color: #888;
+  margin: 0.05em 0 0 0;
+  line-height: 1.15;
+}
+
+.project__links {
+  margin: 0.2em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  line-height: 1;
+}
+
+/* Subsection labels under Selected Research Papers */
+.page__content h3:not(.project__title) {
+  font-size: 0.95em;
+  font-weight: 700;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* 5. Pill-style links ----------------------------------- */
+
+.pill {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 0.78em;
+  background: #eaf0ff;
+  color: #2a6df4;
+  border-radius: 999px;
+  line-height: 1.4;
+  text-decoration: none;
+
+  &:hover {
+    background: #d6e2ff;
+    text-decoration: none;
+  }
+}
+
+/* 6. Single-page tweaks --------------------------------- */
+
+/* Hide the page title (we already greet in body copy + masthead). */
+/* Remove this rule if you want the big H1 back. */
+.page__title {
+  display: none;
+}
+
+/* Hide the masthead theme toggle (sun icon). */
+#theme-toggle {
+  display: none !important;
+}
+
+/* Hide the masthead hamburger / nav toggle (top nav is empty). */
+#site-nav > button {
+  display: none !important;
+}
+
+/* Remove the selected-state underline on the site title link. */
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  border-bottom: none !important;
+}
+
+/* Keep footer in normal flow; only show after page content. */
+.page__footer {
+  position: static !important;
+  bottom: auto !important;
+}
+
+/* Keep left sidebar in normal flow (no fixed/sticky floating). */
+@media screen and (min-width: 64em) {
+  .sidebar,
+  .sidebar.sticky {
+    position: static !important;
+    top: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding-top: 0 !important;
+  }
+}
+
+/* Tighter mobile layout for project cards */
+@media (max-width: 37.5em) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project__thumb {
+    height: auto;
+  }
+
+  .project__thumb img {
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+  }
+
+  .project__body {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+}
