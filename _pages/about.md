@@ -9,13 +9,37 @@ redirect_from:
 
 I am a third-year Ph.D. student in Computer Science at City University of Hong Kong, advised by [Jing Liao](https://www.cityu.edu.hk/stfprofile/jingliao.htm). My research focuses on controllable image and video generation, generative models, and 3D-guided content creation. During my Ph.D. studies, I have also been fortunate to receive valuable guidance and support from [Dongdong Chen](https://www.dongdongchen.bid/). Previously, I received my B.Sc. in Computer Science from CityU in 2023, where I conducted HCI research under the supervision of [Ray LC](https://www.scm.cityu.edu.hk/en/people/ray-lc).
 
-This webpage is last updated on **2026/05/24.**
+This webpage is last updated on **2026/09/05.**
 
 ## Selected Research Papers (* denotes equal contribution)
 
 ### Computer Graphics / Vision
 
 <div class="project-list">
+
+  <div class="project">
+    <a class="project__thumb" href="https://bestzzhang.github.io/VAM/">
+      <img src="{{ base_path }}/images/voxelmem-teaser.png" alt="VoxelMem teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        VoxelMem: Video Generation with 4D Voxel Control and Memory
+      </h3>
+      <p class="project__authors">
+        <strong><ins>Zhiyuan Zhang</ins></strong>,
+        Jingbo Zhang,
+        Zhitong Huang,
+        Qi Sun,
+        Haitao Lin,
+        Shenghao Zhang,
+        Yuzhen Liu,
+        Jing Liao
+      </p>
+      <p class="project__links">
+        <a class="pill" href="https://bestzzhang.github.io/VAM/">Project Page</a>
+      </p>
+    </div>
+  </div>
 
   <div class="project">
     <a class="project__thumb" href="https://bestzzhang.github.io/FlexTraj/">
