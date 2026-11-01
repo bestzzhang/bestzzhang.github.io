@@ -7,15 +7,38 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year Ph.D. student in Computer Science at City University of Hong Kong, advised by [Jing Liao](https://www.cityu.edu.hk/stfprofile/jingliao.htm). My research focuses on controllable image and video generation, generative models, and 3D-guided content creation. During my Ph.D. studies, I have also been fortunate to receive valuable guidance and support from [Dongdong Chen](https://www.dongdongchen.bid/). Previously, I received my B.Sc. in Computer Science from CityU in 2023, where I conducted HCI research under the supervision of [Ray LC](https://www.scm.cityu.edu.hk/en/people/ray-lc).
+I am a final-year Ph.D. student in Computer Science at City University of Hong Kong, advised by [Jing Liao](https://www.cityu.edu.hk/stfprofile/jingliao.htm). My research focuses on controllable image and video generation, generative models, and 3D-guided content creation. During my Ph.D. studies, I have also been fortunate to receive valuable guidance and support from [Dongdong Chen](https://www.dongdongchen.bid/). Previously, I received my B.Sc. in Computer Science from CityU in 2023, where I conducted HCI research under the supervision of [Ray LC](https://www.scm.cityu.edu.hk/en/people/ray-lc).
 
-This webpage is last updated on **2026/09/05.**
+This webpage is last updated on **2026/11/01.**
 
 ## Selected Research Papers (* denotes equal contribution)
 
 ### Computer Graphics / Vision
 
 <div class="project-list">
+
+  <div class="project">
+    <a class="project__thumb" href="https://bestzzhang.github.io/MotionMem/">
+      <img src="{{ base_path }}/images/motionmem-teaser.jpg" alt="MotionMem teaser" />
+    </a>
+    <div class="project__body">
+      <h3 class="project__title">
+        MotionMem: Future Trajectory Forecasting as Dynamic Memory for Video Generation
+      </h3>
+      <p class="project__authors">
+        <strong><ins>Zhiyuan Zhang</ins></strong>,
+        Wangguandong Zheng,
+        Yansong Qu,
+        Quanjian Song,
+        Zesong Yang,
+        Yuhao Liu,
+        Jing Liao
+      </p>
+      <p class="project__links">
+        <a class="pill" href="https://bestzzhang.github.io/MotionMem/">Project Page</a>
+      </p>
+    </div>
+  </div>
 
   <div class="project">
     <a class="project__thumb" href="https://bestzzhang.github.io/VAM/">
@@ -216,8 +239,22 @@ This webpage is last updated on **2026/09/05.**
 ## Internship
 
 <div>
+  <strong>Tencent, IEG WorldModel Team</strong>
+  <span style="float: right;">Oct 2026 – Present</span>
+  <br>
+  Research Intern <span style="float: right;">Shenzhen</span>
+</div>
+
+<div style="margin-top: 1em;">
+  <strong>Bytedance, Douyin WorldModel Team</strong>
+  <span style="float: right;">Jul 2026 – Oct 2026</span>
+  <br>
+  Research Intern <span style="float: right;">Shenzhen</span>
+</div>
+
+<div style="margin-top: 1em;">
   <strong>Tencent, RoboticsX Team</strong>
-  <span style="float: right;">Nov 2025 – Present</span>
+  <span style="float: right;">Nov 2025 – Jul 2026</span>
   <br>
   Research Intern <span style="float: right;">Shenzhen</span>
 </div>
